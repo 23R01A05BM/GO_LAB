@@ -1,0 +1,15 @@
+package main
+
+import (
+	"fmt"
+	"sort"
+)
+
+func main() {
+	nums := []int{10, 5, 30, 20, 15}
+	words := []string{"Apple", "Mango", "Banana", "Orange"}
+	sort.Sort(sort.Reverse(sort.IntSlice(nums)))
+	sort.Sort(sort.Reverse(sort.StringSlice(words)))
+	fmt.Println("The reverse sort of Nums is ", nums)
+	fmt.Println("The reverse sort of Words is ", words)
+}
