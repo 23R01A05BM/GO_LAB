@@ -1,0 +1,14 @@
+package main
+
+import (
+	"fmt"
+	"strings"
+)
+
+func main() {
+	s := "hello world"
+	fmt.Println("Contains", strings.Contains(s, "hello"))
+	fmt.Println("ContainsAny", strings.ContainsAny(s, "sai"))
+	fmt.Println("Count", strings.Count(s, "l"))
+	fmt.Println("Equalfold", strings.EqualFold("world", "World"))
+}
