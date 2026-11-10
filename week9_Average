@@ -1,0 +1,19 @@
+package main
+
+import "fmt"
+
+func main() {
+	var n int
+	fmt.Println("Enter the value of N")
+	fmt.Scan(&n)
+
+	a := make([]float64, n)
+	//a:=[5]int {1,2,3,4,5}
+	sum := 0.0
+	for i := 0; i < n; i++ {
+		fmt.Scan(&a[i])
+		sum += float64(a[i])
+	}
+	avg := sum / float64(n)
+	fmt.Print("Average is ", avg)
+}
