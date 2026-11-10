@@ -1,0 +1,28 @@
+// week3.go
+package main
+
+import (
+	"fmt"
+
+	person "person.go/package_file"
+)
+
+func main() {
+	s := person.Student{
+		Name: "Krupakar",
+		Age:  22,
+	}
+	fmt.Println("Name", s.Name)
+	fmt.Print("Age", s.Age)
+}
+// go mod init person.go 
+// import the same like person.go/foldername where it is located 	
+// person.go
+
+package person
+
+type Student struct{
+	Name string
+	Age int
+}
+// go mod init person.go
