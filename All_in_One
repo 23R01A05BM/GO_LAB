@@ -1,0 +1,165 @@
+package main
+
+import (
+	"fmt"
+	// "math"
+	// student "student.go/package_file"
+)
+
+type Contact struct {
+	Name  string
+	Age   int
+	Email string
+}
+
+func main() {
+	week1
+	var a, b int
+	fmt.Println("Enter the values of A & B")
+	fmt.Scan(&a, &b)
+	x, y := a, b
+	for b != 0 {
+		a, b = b, a%b
+	}
+	gcd := a
+	lcm := (x * y) / gcd
+	fmt.Println("Lcm and Gcd is ", lcm, gcd)
+
+	// week2
+	// var n int
+	// fmt.Println("Enter the value of N")
+	// fmt.Scan(&n)
+	// for i := 1; i <= n; i++ {
+	// 	for j := 1; j <= n-i; j++ {
+	// 		fmt.Print(" ")
+	// 	}
+	// 	for j := 1; j <= i; j++ {
+	// 		fmt.Print(j, " ")
+	// 	}
+	// 	fmt.Println()
+	// }
+
+	// week3_Struct
+	// s := student.Student{
+	// 	Name: "Krupakar",
+	// 	Age:  21,
+	// }
+	// fmt.Println(s.Name)
+	// fmt.Println(s.Age)
+
+	// week4_Standard_deviation
+	// var n int
+	// fmt.Println("Enter the value of N")
+	// fmt.Scan(&n)
+	// a := make([]float64, n)
+	// var sum float64
+	// for i := 0; i < n; i++ {
+	// 	fmt.Scan(&a[i])
+	// 	sum += a[i]
+	// }
+	// mean := sum / float64(n)
+	// var v float64
+	// for i := 0; i < n; i++ {
+	// 	d := a[i] - mean
+	// 	v += d * d
+	// }
+	// v /= float64(n)
+	// sd := math.Sqrt(v)
+	// fmt.Println("Standard deviation is ", sd)
+
+	// week5_FLoids_Triangle
+	// var n int
+	// fmt.Println("Enter the value of N")
+	// fmt.Scan(&n)
+	// x := 1
+	// for i := 0; i < n; i++ {
+	// 	for j:=0;j<n-i-1;j++{
+	// 		fmt.Print(" ")
+	// 	}
+	// 	for j := 0; j < i+1; j++ {
+	// 		fmt.Print(x," ")
+	// 		x++
+	// 	}
+	// 	fmt.Println()
+	// }
+
+	// week6_Add2strings
+	// var s1, s2 string
+	// fmt.Println("Enter 2 strings")
+	// fmt.Scan(&s1, &s2)
+	// res := s1 + s2
+	// fmt.Println("Added string is ", res)
+
+	// week7_Palindrome
+	// var s string
+	// fmt.Println("Enter the string")
+	// fmt.Scan(&s)
+
+	// res := ""
+	// for i := len(s) - 1; i >= 0; i-- {
+	// 	res += string(s[i])
+	// }
+	// if s == res {
+	// 	fmt.Println("Palindrome")
+	// } else {
+	// 	fmt.Print("Not")
+	// }
+
+	// week8_Contact_List
+	// var c Contact
+	// fmt.Println("Enter the Name")
+	// fmt.Scan(&c.Name)
+	// fmt.Println("Enter the Age")
+	// fmt.Scan(&c.Age)
+	// fmt.Println("Enter the Email")
+	// fmt.Scan(&c.Email)
+	// fmt.Println("Contact---Details")
+	// fmt.Println("Name is --", c.Name)
+	// fmt.Println("Age is --", c.Age)
+	// fmt.Println("Email is --", c.Email)
+
+	// week9_Average
+	// var n int
+	// fmt.Println("Enter the value of N")
+	// fmt.Scan(&n)
+	// a := make([]int, n)
+	// var sum int
+	// for i := 0; i < n; i++ {
+	// 	fmt.Scan(&a[i])
+	// 	sum += a[i]
+	// }
+	// mean := sum / n
+	// fmt.Println("The average is ", mean)
+
+	// week10_Remove_Dups
+	// var n int
+	// fmt.Println("Enter the value of N")
+	// fmt.Scan(&n)
+	// a := make([]int, n)
+	// seen := make(map[int]bool)
+	// res := []int{}
+	// for i := 0; i < n; i++ {
+	// 	fmt.Scan(&a[i])
+	// 	if !seen[a[i]] {
+	// 		seen[a[i]] = true
+	// 		res = append(res, a[i])
+	// 	}
+	// }
+	// fmt.Print("After removing dups", res)
+
+	// week11_reversesort
+	// nums := []int{2, 5, 6, 2, 55, 7, 99}
+	// words := []string{"apple", "mango", "orange", "kiwi"}
+	// sort.Sort(sort.Reverse(sort.IntSlice(nums)))
+	// sort.Sort(sort.Reverse(sort.StringSlice(words)))
+	// fmt.Println("After sorting in reverse ", nums)
+	// fmt.Println("After sorting in reverse ", words)
+
+	// week12_string operations
+	// s := "my name is krupakar"
+	// fmt.Println(strings.Contains(s, "is"))
+	// fmt.Println(strings.ContainsAny(s, "z"))
+	// fmt.Println(strings.Count(s, "k"))
+	// fmt.Println(strings.EqualFold("name", "NamE"))
+
+}
